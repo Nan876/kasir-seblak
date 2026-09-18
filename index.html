@@ -29,17 +29,43 @@
         }
 
         .header h1 {
-            font-size: 22px;
+            font-size: 24px;
             margin-bottom: 5px;
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 8px;
+            font-weight: 700;
+        }
+
+        .header-subtitle {
+            font-size: 36px;
+            font-weight: 900;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            background: linear-gradient(135deg, #ffffff 0%, #ffeb3b 50%, #ffffff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 8px 0;
+            font-family: 'Arial Black', 'Impact', 'Helvetica Neue', sans-serif;
+            text-shadow: 0 4px 15px rgba(0,0,0,0.4);
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+            0%, 100% {
+                filter: brightness(1);
+            }
+            50% {
+                filter: brightness(1.3);
+            }
         }
 
         .header p {
             font-size: 13px;
             opacity: 0.9;
+            margin-top: 8px;
         }
 
         .header-info {
@@ -529,7 +555,12 @@
             }
 
             .header h1 {
-                font-size: 18px;
+                font-size: 20px;
+            }
+
+            .header-subtitle {
+                font-size: 28px;
+                letter-spacing: 6px;
             }
 
             .header p {
@@ -591,6 +622,7 @@
 <body>
     <div class="header">
         <h1>🌶️ SEBLAK MERCON</h1>
+        <div class="header-subtitle">SEUHAH</div>
         <p>Aplikasi Kasir Digital - Pedasnya Nampol!</p>
     </div>
 
@@ -600,7 +632,7 @@
     </div>
 
     <div class="tab-nav">
-        <button class="tab-btn active" onclick="pindahTab('menu')"> Menu</button>
+        <button class="tab-btn active" onclick="pindahTab('menu')">📋 Menu</button>
         <button class="tab-btn" onclick="pindahTab('keranjang')">🛒 Keranjang <span id="tabCount">(0)</span></button>
     </div>
 
@@ -614,7 +646,7 @@
                 <div class="category-chips" id="categoryChips">
                     <button class="chip active" data-kategori="Semua">🍽️ Semua</button>
                     <button class="chip" data-kategori="Seblak">🌶️ Seblak</button>
-                    <button class="chip" data-kategori="Topping"> Topping</button>
+                    <button class="chip" data-kategori="Topping">🧀 Topping</button>
                     <button class="chip" data-kategori="Minuman">🥤 Minuman</button>
                 </div>
 
@@ -860,7 +892,7 @@
 
             const strukHTML = `
                 <div class="struk-info">
-                    <h3>🌶️ SEBLAK MERCON</h3>
+                    <h3>🌶️ SEBLAK MERCON - SEUHAH</h3>
                     <p>Jl. Pedas No. 1, Jakarta</p>
                     <p>Telp: 0812-3456-7890</p>
                     <p style="margin-top:8px;">No. Order: <strong>${noOrder}</strong></p>
@@ -889,7 +921,7 @@
                 </div>
                 <div class="struk-footer">
                     <p>Terima kasih atas kunjungan Anda! 🙏</p>
-                    <p style="margin-top:5px;">Pedasnya nampol, rasanya jos! ️</p>
+                    <p style="margin-top:5px;">Pedasnya nampol, rasanya jos! 🌶️</p>
                 </div>
             `;
 
