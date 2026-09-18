@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kasir Seblak Mercon</title>
+    <title>Kasir Seblak Mercon SEUHAH</title>
     <style>
         * {
             margin: 0;
@@ -54,12 +54,8 @@
         }
 
         @keyframes glow {
-            0%, 100% {
-                filter: brightness(1);
-            }
-            50% {
-                filter: brightness(1.3);
-            }
+            0%, 100% { filter: brightness(1); }
+            50% { filter: brightness(1.3); }
         }
 
         .header p {
@@ -109,9 +105,7 @@
             background: #ffebee;
         }
 
-        .tab-btn:hover {
-            background: #fff5f5;
-        }
+        .tab-btn:hover { background: #fff5f5; }
 
         /* CONTAINER */
         .container {
@@ -154,10 +148,7 @@
             outline: none;
             transition: border 0.3s;
         }
-
-        .search-box:focus {
-            border-color: #d32f2f;
-        }
+        .search-box:focus { border-color: #d32f2f; }
 
         /* KATEGORI CHIPS */
         .category-chips {
@@ -183,10 +174,7 @@
             color: white;
             border-color: #d32f2f;
         }
-
-        .chip:hover {
-            border-color: #d32f2f;
-        }
+        .chip:hover { border-color: #d32f2f; }
 
         /* GRID MENU */
         .menu-grid {
@@ -213,10 +201,7 @@
             box-shadow: 0 6px 15px rgba(0,0,0,0.12);
             border-color: #d32f2f;
         }
-
-        .menu-card:active {
-            transform: scale(0.97);
-        }
+        .menu-card:active { transform: scale(0.97); }
 
         .menu-img {
             width: 100%;
@@ -232,9 +217,7 @@
             display: block;
         }
 
-        .menu-info {
-            padding: 8px 10px;
-        }
+        .menu-info { padding: 8px 10px; }
 
         .menu-name {
             font-weight: 600;
@@ -274,11 +257,7 @@
             padding: 30px 20px;
             color: #999;
         }
-
-        .cart-empty .icon {
-            font-size: 40px;
-            margin-bottom: 10px;
-        }
+        .cart-empty .icon { font-size: 40px; margin-bottom: 10px; }
 
         .cart-item {
             display: flex;
@@ -296,17 +275,9 @@
             flex-shrink: 0;
             background: linear-gradient(135deg, #ff6b6b, #ee5a24);
         }
+        .cart-item-img img { width: 100%; height: 100%; object-fit: cover; }
 
-        .cart-item-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .cart-item-info {
-            flex: 1;
-            min-width: 0;
-        }
+        .cart-item-info { flex: 1; min-width: 0; }
 
         .cart-item-name {
             font-weight: 600;
@@ -323,11 +294,7 @@
             font-size: 12px;
         }
 
-        .qty-control {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
+        .qty-control { display: flex; align-items: center; gap: 5px; }
 
         .qty-btn {
             width: 26px;
@@ -341,16 +308,8 @@
             align-items: center;
             justify-content: center;
         }
-
-        .qty-btn.minus {
-            background: #ffebee;
-            color: #d32f2f;
-        }
-
-        .qty-btn.plus {
-            background: #e8f5e9;
-            color: #2e7d32;
-        }
+        .qty-btn.minus { background: #ffebee; color: #d32f2f; }
+        .qty-btn.plus { background: #e8f5e9; color: #2e7d32; }
 
         .qty-num {
             font-weight: 700;
@@ -376,10 +335,7 @@
             padding-top: 10px;
             border-top: 2px dashed #ccc;
         }
-
-        .summary-row.total .amount {
-            color: #d32f2f;
-        }
+        .summary-row.total .amount { color: #d32f2f; }
 
         .btn-bayar {
             width: 100%;
@@ -394,12 +350,10 @@
             margin-top: 10px;
             transition: all 0.3s;
         }
-
         .btn-bayar:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(46,125,50,0.4);
         }
-
         .btn-bayar:disabled {
             background: #ccc;
             cursor: not-allowed;
@@ -430,10 +384,7 @@
             align-items: center;
             padding: 20px;
         }
-
-        .modal-overlay.show {
-            display: flex;
-        }
+        .modal-overlay.show { display: flex; }
 
         .modal-content {
             background: white;
@@ -451,15 +402,9 @@
             text-align: center;
             border-radius: 15px 15px 0 0;
         }
+        .modal-header h2 { font-size: 18px; margin-bottom: 5px; }
 
-        .modal-header h2 {
-            font-size: 18px;
-            margin-bottom: 5px;
-        }
-
-        .struk-body {
-            padding: 20px;
-        }
+        .struk-body { padding: 20px; }
 
         .struk-info {
             text-align: center;
@@ -467,16 +412,8 @@
             padding-bottom: 15px;
             border-bottom: 2px dashed #ccc;
         }
-
-        .struk-info h3 {
-            color: #d32f2f;
-            margin-bottom: 5px;
-        }
-
-        .struk-info p {
-            font-size: 12px;
-            color: #666;
-        }
+        .struk-info h3 { color: #d32f2f; margin-bottom: 5px; }
+        .struk-info p { font-size: 12px; color: #666; }
 
         .struk-item {
             display: flex;
@@ -484,22 +421,9 @@
             padding: 5px 0;
             font-size: 13px;
         }
-
-        .struk-item .nama {
-            flex: 1;
-        }
-
-        .struk-item .qty {
-            width: 40px;
-            text-align: center;
-            color: #666;
-        }
-
-        .struk-item .harga {
-            width: 80px;
-            text-align: right;
-            font-weight: 600;
-        }
+        .struk-item .nama { flex: 1; }
+        .struk-item .qty { width: 40px; text-align: center; color: #666; }
+        .struk-item .harga { width: 80px; text-align: right; font-weight: 600; }
 
         .struk-total {
             border-top: 2px dashed #ccc;
@@ -536,16 +460,8 @@
             cursor: pointer;
             font-size: 14px;
         }
-
-        .btn-close {
-            background: #d32f2f;
-            color: white;
-        }
-
-        .btn-print {
-            background: #2e7d32;
-            color: white;
-        }
+        .btn-close { background: #d32f2f; color: white; }
+        .btn-print { background: #2e7d32; color: white; }
 
         /* RESPONSIVE MOBILE */
         @media (max-width: 768px) {
@@ -553,70 +469,26 @@
                 grid-template-columns: 1fr;
                 padding: 10px;
             }
-
-            .header h1 {
-                font-size: 20px;
-            }
-
-            .header-subtitle {
-                font-size: 28px;
-                letter-spacing: 6px;
-            }
-
-            .header p {
-                font-size: 12px;
-            }
-
+            .header h1 { font-size: 20px; }
+            .header-subtitle { font-size: 28px; letter-spacing: 6px; }
+            .header p { font-size: 12px; }
             .menu-grid {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 8px;
                 max-height: none;
             }
-
-            .menu-img {
-                height: 75px;
-            }
-
-            .menu-name {
-                font-size: 11px;
-            }
-
-            .menu-price {
-                font-size: 12px;
-            }
-
-            .cart-container {
-                position: relative;
-                top: 0;
-            }
-
-            .tab-btn {
-                font-size: 12px;
-                padding: 12px 8px;
-            }
-
-            .card {
-                padding: 15px;
-            }
-
-            .card-title {
-                font-size: 16px;
-            }
+            .menu-img { height: 75px; }
+            .menu-name { font-size: 11px; }
+            .menu-price { font-size: 12px; }
+            .cart-container { position: relative; top: 0; }
+            .tab-btn { font-size: 12px; padding: 12px 8px; }
+            .card { padding: 15px; }
+            .card-title { font-size: 16px; }
         }
 
-        /* SCROLLBAR */
-        ::-webkit-scrollbar {
-            width: 6px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #ccc;
-            border-radius: 3px;
-        }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #ccc; border-radius: 3px; }
     </style>
 </head>
 <body>
@@ -640,16 +512,13 @@
         <div class="menu-container" id="menuContainer">
             <div class="card">
                 <div class="card-title">🍽️ Pilih Menu</div>
-                
-                <input type="text" class="search-box" id="searchInput" placeholder="🔍 Cari menu...">
-
+                <input type="text" class="search-box" id="searchInput" placeholder=" Cari menu...">
                 <div class="category-chips" id="categoryChips">
                     <button class="chip active" data-kategori="Semua">🍽️ Semua</button>
                     <button class="chip" data-kategori="Seblak">🌶️ Seblak</button>
                     <button class="chip" data-kategori="Topping">🧀 Topping</button>
                     <button class="chip" data-kategori="Minuman">🥤 Minuman</button>
                 </div>
-
                 <div class="menu-grid" id="menuGrid"></div>
             </div>
         </div>
@@ -657,7 +526,6 @@
         <div class="cart-container" id="cartContainer">
             <div class="card">
                 <div class="card-title">🛒 Pesanan <span style="background:#d32f2f;color:white;padding:2px 10px;border-radius:15px;font-size:12px;margin-left:8px;" id="cartCount">0</span></div>
-
                 <div class="cart-items" id="cartItems">
                     <div class="cart-empty">
                         <div class="icon">🛒</div>
@@ -665,7 +533,6 @@
                         <p style="font-size:11px;margin-top:5px;">Klik menu untuk menambah</p>
                     </div>
                 </div>
-
                 <div class="summary-row">
                     <span>Subtotal</span>
                     <span id="subtotal">Rp 0</span>
@@ -678,10 +545,7 @@
                     <span>TOTAL</span>
                     <span class="amount" id="total">Rp 0</span>
                 </div>
-
-                <button class="btn-bayar" id="btnBayar" onclick="bayar()" disabled>
-                    💳 BAYAR SEKARANG
-                </button>
+                <button class="btn-bayar" id="btnBayar" onclick="bayar()" disabled> BAYAR SEKARANG</button>
                 <button class="btn-clear" onclick="clearCart()">🗑️ Kosongkan Keranjang</button>
             </div>
         </div>
@@ -726,9 +590,7 @@
         let searchQuery = '';
         let tabAktif = 'menu';
 
-        function formatRp(angka) {
-            return "Rp " + angka.toLocaleString('id-ID');
-        }
+        function formatRp(angka) { return "Rp " + angka.toLocaleString('id-ID'); }
 
         function updateTanggal() {
             const now = new Date();
@@ -742,7 +604,6 @@
             const menuContainer = document.getElementById('menuContainer');
             const cartContainer = document.getElementById('cartContainer');
             const tabs = document.querySelectorAll('.tab-btn');
-
             if (tab === 'menu') {
                 menuContainer.style.display = 'block';
                 cartContainer.style.display = 'none';
@@ -759,17 +620,9 @@
         function renderMenu() {
             const grid = document.getElementById('menuGrid');
             let filtered = menuData;
-
-            if (kategoriAktif !== 'Semua') {
-                filtered = filtered.filter(item => item.kategori === kategoriAktif);
-            }
-
-            if (searchQuery) {
-                filtered = filtered.filter(item => 
-                    item.nama.toLowerCase().includes(searchQuery.toLowerCase())
-                );
-            }
-
+            if (kategoriAktif !== 'Semua') filtered = filtered.filter(item => item.kategori === kategoriAktif);
+            if (searchQuery) filtered = filtered.filter(item => item.nama.toLowerCase().includes(searchQuery.toLowerCase()));
+            
             grid.innerHTML = filtered.map(item => `
                 <div class="menu-card" onclick="tambahKeranjang(${item.id})">
                     <div class="menu-img">
@@ -801,13 +654,8 @@
         function tambahKeranjang(id) {
             const item = menuData.find(m => m.id === id);
             const existing = keranjang.find(k => k.id === id);
-
-            if (existing) {
-                existing.qty++;
-            } else {
-                keranjang.push({ ...item, qty: 1 });
-            }
-
+            if (existing) { existing.qty++; } 
+            else { keranjang.push({ ...item, qty: 1 }); }
             renderKeranjang();
         }
 
@@ -815,9 +663,7 @@
             const item = keranjang.find(k => k.id === id);
             if (item) {
                 item.qty += delta;
-                if (item.qty <= 0) {
-                    keranjang = keranjang.filter(k => k.id !== id);
-                }
+                if (item.qty <= 0) keranjang = keranjang.filter(k => k.id !== id);
             }
             renderKeranjang();
         }
@@ -835,19 +681,12 @@
             const countEl = document.getElementById('cartCount');
             const tabCountEl = document.getElementById('tabCount');
             const btnBayar = document.getElementById('btnBayar');
-
             const totalItem = keranjang.reduce((sum, item) => sum + item.qty, 0);
             countEl.textContent = totalItem;
             tabCountEl.textContent = `(${totalItem})`;
 
             if (keranjang.length === 0) {
-                container.innerHTML = `
-                    <div class="cart-empty">
-                        <div class="icon">🛒</div>
-                        <p>Keranjang masih kosong</p>
-                        <p style="font-size:11px;margin-top:5px;">Klik menu untuk menambah</p>
-                    </div>
-                `;
+                container.innerHTML = `<div class="cart-empty"><div class="icon"></div><p>Keranjang masih kosong</p><p style="font-size:11px;margin-top:5px;">Klik menu untuk menambah</p></div>`;
                 btnBayar.disabled = true;
             } else {
                 container.innerHTML = keranjang.map(item => `
@@ -868,7 +707,6 @@
                 `).join('');
                 btnBayar.disabled = false;
             }
-
             updateTotal();
         }
 
@@ -876,7 +714,6 @@
             const subtotal = keranjang.reduce((sum, item) => sum + (item.harga * item.qty), 0);
             const pajak = Math.round(subtotal * 0.1);
             const total = subtotal + pajak;
-
             document.getElementById('subtotal').textContent = formatRp(subtotal);
             document.getElementById('pajak').textContent = formatRp(pajak);
             document.getElementById('total').textContent = formatRp(total);
@@ -884,7 +721,6 @@
 
         function bayar() {
             if (keranjang.length === 0) return;
-
             const subtotal = keranjang.reduce((sum, item) => sum + (item.harga * item.qty), 0);
             const pajak = Math.round(subtotal * 0.1);
             const total = subtotal + pajak;
@@ -893,8 +729,8 @@
             const strukHTML = `
                 <div class="struk-info">
                     <h3>🌶️ SEBLAK MERCON - SEUHAH</h3>
-                    <p>Jl. Pedas No. 1, Jakarta</p>
-                    <p>Telp: 0812-3456-7890</p>
+                    <p>Sukaraja, Sukabumi</p>
+                    <p>Telp: 0856-2446-5482</p>
                     <p style="margin-top:8px;">No. Order: <strong>${noOrder}</strong></p>
                     <p>${new Date().toLocaleString('id-ID')}</p>
                 </div>
@@ -906,25 +742,19 @@
                     </div>
                 `).join('')}
                 <div class="struk-item" style="margin-top:10px;">
-                    <span>Subtotal</span>
-                    <span></span>
-                    <span>${formatRp(subtotal)}</span>
+                    <span>Subtotal</span><span></span><span>${formatRp(subtotal)}</span>
                 </div>
                 <div class="struk-item">
-                    <span>Pajak (10%)</span>
-                    <span></span>
-                    <span>${formatRp(pajak)}</span>
+                    <span>Pajak (10%)</span><span></span><span>${formatRp(pajak)}</span>
                 </div>
                 <div class="struk-total">
-                    <span>TOTAL</span>
-                    <span>${formatRp(total)}</span>
+                    <span>TOTAL</span><span>${formatRp(total)}</span>
                 </div>
                 <div class="struk-footer">
                     <p>Terima kasih atas kunjungan Anda! 🙏</p>
                     <p style="margin-top:5px;">Pedasnya nampol, rasanya jos! 🌶️</p>
                 </div>
             `;
-
             document.getElementById('strukBody').innerHTML = strukHTML;
             document.getElementById('modalStruk').classList.add('show');
         }
@@ -938,22 +768,12 @@
         function cetakStruk() {
             const strukContent = document.getElementById('strukBody').innerHTML;
             const printWindow = window.open('', '', 'width=400,height=600');
-            printWindow.document.write(`
-                <html>
-                <head><title>Struk - Seblak Mercon</title></head>
-                <body style="font-family:monospace;padding:20px;">
-                    ${strukContent}
-                </body>
-                </html>
-            `);
+            printWindow.document.write(`<html><head><title>Struk - Seblak Mercon</title></head><body style="font-family:monospace;padding:20px;">${strukContent}</body></html>`);
             printWindow.document.close();
             printWindow.print();
         }
 
-        // Init
-        if (window.innerWidth <= 768) {
-            pindahTab('menu');
-        }
+        if (window.innerWidth <= 768) { pindahTab('menu'); }
         renderMenu();
         renderKeranjang();
     </script>
